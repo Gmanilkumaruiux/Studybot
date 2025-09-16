@@ -1,0 +1,174 @@
+/* General Body Style (for demonstration) */
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Chatbot container */
+.chatbot-container {
+  width: 350px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+/* Header */
+.chatbot-header {
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* This is the NEW code */
+.chatbot-header .close-btn {
+  background-color: orange; /* A nice orange color */
+  color: white;               /* The '×' symbol color */
+  border: none;
+  border-radius: 50%;         /* Makes the button a perfect circle */
+  cursor: pointer;
+  
+  /* Use width and height for a consistent size */
+  width: 28px;
+  height: 28px;
+  
+  /* Flexbox to perfectly center the '×' */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 18px;            /* Adjusted font size for the icon */
+  font-weight: bold;
+  line-height: 1;             /* Helps with vertical alignment */
+  
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+/* Add a hover effect for better user experience */
+.chatbot-header .close-btn:hover {
+  background-color: orange; /* A slightly darker orange on hover */
+}
+
+
+/* Chat body */
+.chatbot-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column; /* Key for aligning message blocks */
+}
+
+/* Generic Message container styles */
+.bot-message,
+.user-message {
+  display: flex;
+  align-items: flex-end; /* Aligns icon with bottom of message bubble */
+  margin-bottom: 15px;
+  max-width: 85%;
+}
+
+/* Bot specific alignment */
+.bot-message {
+  align-self: flex-start;
+}
+
+/* User specific alignment */
+.user-message {
+  align-self: flex-end; /* Pushes the entire block to the right */
+  flex-direction: row-reverse; /* Reverses the order of icon and message */
+}
+
+/* Icon styles for both bot and user */
+.icon {
+  background: orange;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  /* Use fixed width/height for a perfect circle */
+  width: 40px;
+  height: 40px;
+  min-width: 40px; /* Prevents icon from shrinking */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bot-message .icon {
+  margin-right: 10px;
+}
+
+.user-message .icon {
+  margin-left: 10px;
+}
+
+
+/* Message bubble styles */
+.message {
+  background: #f1f0f0;
+  color: #333;
+  padding: 10px;
+  border-radius: 20px;
+  line-height: 1.4;
+}
+
+/* User specific bubble style */
+.user-message .message {
+  background: #ffe0b2;
+}
+
+
+/* Footer */
+.chatbot-footer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 12px 10px;
+}
+
+.chatbot-footer input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.chatbot-footer input::placeholder {
+  color: #999;
+}
+
+.chatbot-footer button {
+  background: orange;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0deg); /* Rotates the plane icon to point up-right */
+  padding-bottom: 3px; /* Visual adjustment for the icon */
+}
