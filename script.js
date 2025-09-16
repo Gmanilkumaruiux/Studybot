@@ -44,9 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
       answer: "You can reach our Technical Support team directly via email."
     },
     {
-      question: " Is this free or Paid",
-      answer: "It is completly free of cost."
-    },
+      question: "Good morning",
+      answer:"very good morning How can I help you
     // Add more FAQs here
   ];
     
