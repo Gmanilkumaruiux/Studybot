@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       question: "Good morning",
       answer:"very good morning How can I help you."
+    }
     // Add more FAQs here
   ];
     
