@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
   // Correctly select elements using their new IDs
   const chatBody = document.getElementById('chat-body');
   const userInput = document.getElementById('user-input');
@@ -42,10 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       question: "contact",
       answer: "You can reach our Technical Support team directly via email."
-    },
-    {
-      question: "Good morning",
-      answer:"very good morning How can I help you."
     },
     // Add more FAQs here
   ];
